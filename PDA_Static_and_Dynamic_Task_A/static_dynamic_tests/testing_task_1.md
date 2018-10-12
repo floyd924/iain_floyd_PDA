@@ -13,7 +13,9 @@ class CardGame
 
 
   def checkforAce(card)
+    #i would use snake case, all lowercase: check_for_ace
     if card.value = 1
+      #i think you need == here
       return true
     else
       return false
@@ -21,21 +23,35 @@ class CardGame
   end
 
   dif highest_card(card1 card2)
+  #should say def not dif
   if card1.value > card2.value
     return card.name
+    #object Card does not have a 'name' attribute.
+    #want card2.value?
   else
     card2
+    #needs keyword 'return'.
+    #this returns an object. You want to return card2.value
   end
 end
 end
+#don't need this final end statement
 
 def self.cards_total(cards)
+  #must define array of cards
   total
+  #need to define total = 0 if you wish to add to it below
   for card in cards
     total += card.value
+    #must convert card.value to integar
+    #must end the for loop here,
+    #before you return the statement below
     return "You have a total of" + total
+    #add a space after 'of' before "
   end
 end
+
+#must add 'end' term to end the class
 
 
 ```
